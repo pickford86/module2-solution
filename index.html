@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>module2-solution</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+        background-color: white;
+    }
+
+    h1 {
+        margin: 50px;
+        text-align: center;
+        font-family: Verdana;
+        font-weight: bold;
+        font-size: 175%;
+    }
+
+    section {
+        position: relative;
+        padding: 15px;
+        width: 100%;
+    }
+
+    p {
+        position: relative;
+        clear:right;
+    }
+
+    div {
+        position: relative;
+        background-color: gray;
+        border: 2.5px solid black;
+        width: 100%;
+    }
+
+    .Chicken {
+        float: right;
+        width: 100px;
+        margin: 0px;
+        border: 1px solid black;
+        text-align: center;
+        font-weight: bold;
+        font-size: 125%;
+        background-color: #f99aa9;
+
+    }
+
+    .Beef {
+        color: white;
+        float: right;
+        width: 100px;
+        margin: 0px;
+        border: 1px solid black;
+        text-align: center;
+        font-weight: bold;
+        font-size: 125%;
+        background-color: #b75454;
+
+    }
+
+    .Sushi {
+        float: right;
+        width: 100px;
+        margin: 0px;
+        border: 1px solid black;
+        text-align: center;
+        font-weight: bold;
+        font-size: 125%;
+        background-color: #f1f595;
+
+    }
+
+    .Content {
+        padding: 10px;
+        background-color: #808080;
+        font-family: Georgia;
+        color: black;
+        height: 160px;
+    }
+
+    @media (min-width: 992px) {
+        .column-lg-4 {
+            float: left;
+            width: 33.33%;
+        }
+    }
+
+    @media (min-width: 768px) and (max-width: 991px) {
+        .column-md-6 {
+            float: left;
+            width: 50%;
+        }
+
+        .column-md-12 {
+            float: left;
+        }
+    }
+
+    @media (max-width: 767px) {
+        .column-sm-12 {
+            float: left;
+        }
+    }
+</style>
+
+<body>
+    <h1>Our Menu</h1>
+    <section class="column-lg-4 column-md-6 column-sm-12">
+        <div>
+            <p class="Chicken">Chicken</p>
+            <p class="Content">Lorem ipsum dolor sit amet. Ut ullam repellendus qui veniam consectetur hic fugit suscipit est repudiandae fugiat aut facilis recusandae aut nihil quis. A veritatis tempore cum odio officia et Quis porro est voluptas asperiores.</p>
+        </div>
+    </section>
+    <section class="column-lg-4 column-md-6 column-sm-12">
+        <div>
+            <p class="Beef">Beef</p>      
+            <p class="Content">Lorem ipsum dolor sit amet. Ut ullam repellendus qui veniam consectetur hic fugit suscipit est repudiandae fugiat aut facilis recusandae aut nihil quis. A veritatis tempore cum odio officia et Quis porro est voluptas asperiores.</p>
+        </div>
+    </section>
+    <section class="column-lg-4 column-md-12 column-sm-12">
+        <div>
+            <p class="Sushi">Sushi</p>
+            <p class="Content">Lorem ipsum dolor sit amet. Ut ullam repellendus qui veniam consectetur hic fugit suscipit est repudiandae fugiat aut facilis recusandae aut nihil quis. A veritatis tempore cum odio officia et Quis porro est voluptas asperiores.</p>
+        </div>
+     </section>
+</body>
+</html>
